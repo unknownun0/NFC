@@ -25,6 +25,11 @@ git push -u origin main
 2. Framework preset: **Next.js** (auto-detected). Click Deploy — it's fine if
    the first deploy fails/errors on API routes, since KV isn't connected yet.
 
+If Vercel shows `No Output Directory named "public" found`, open Project
+Settings -> Build and Deployment and clear the Output Directory field. Set the
+Framework Preset to **Next.js**. This project uses Next.js routing and should
+not be deployed as a static `public` directory.
+
 ## 3. Add Vercel KV
 
 1. In your Vercel project, go to the **Storage** tab.
